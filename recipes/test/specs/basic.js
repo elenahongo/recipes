@@ -1,9 +1,12 @@
-const assert = require('assert')
+const {assert} = require('chai');
 
-describe('webdriver.io page', () => {
-    it('should have the right title', async () => {
-        await browser.url('https://webdriver.io')
-        const title = await browser.getTitle()
-        assert.strictEqual(title, 'WebdriverIO · Next-gen WebDriver test framework for Node.js')
-    })
-})
+describe('User visits root', () => {
+    describe('without existing recipes', () => {
+      it('page starts blank', () => {
+        browser.url('/');
+        const recipes = $('#recipes');
+  assert.equal(recipes.getText(), '');
+      });
+    });
+  });
+  
