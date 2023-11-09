@@ -54,7 +54,7 @@
     "@wdio/testingbot-service": "^5.16.10",
     "appium": "^1.16.0",
     "chai": "^4.2.0",
-    "chromedriver": "^79.0.2",
+    "chromedriver": "^119.0.1",
     "mocha": "^7.0.1",
     "mocha-chrome": "^2.2.0",
     "mocha-phantomjs": "^4.1.0",
